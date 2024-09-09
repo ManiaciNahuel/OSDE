@@ -1,0 +1,5 @@
+.env
+/node_modules
+/front/node_modules
+/Back/.wwebjs_cache
+/Back/.wwebjs_auth
