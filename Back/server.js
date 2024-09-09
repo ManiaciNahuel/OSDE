@@ -6,6 +6,7 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const nodemailer = require('nodemailer');
 const fs = require('fs');
+require('dotenv').config();
 
 const app = express();
 
@@ -52,7 +53,6 @@ client.on('disconnected', (reason) => {
         client.initialize(); // Reinitialize after a delay
     }, 3000); // 3 seconds delay
 });
-
 
 
 // Initialize the WhatsApp client
